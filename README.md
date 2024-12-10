@@ -41,7 +41,7 @@ This project recommends restaurants based on multiple criteria such as distance,
 
 ## Author
 
-- [Your Name]
+- Mayy Miled, Giuliano Aldarwish
 
 ## Contributing
 
