@@ -11,7 +11,7 @@ arrondissements = [
     (48.8635, 2.3610, 610),    # 3e
     (48.8555, 2.3572, 714),    # 4e
 ]
-
+cle = st.secrets["CLE"]
 @dataclass
 class Item:
     Nom: str | None
@@ -70,7 +70,7 @@ def run_api(lat, lng, rad):
     }
     headers = {
         "Content-Type": "application/json",
-        "X-Goog-Api-Key": "",
+        "X-Goog-Api-Key": cle,
         "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.rating,places.allowsDogs,places.location"
     }
     response = requests.post("https://places.googleapis.com/v1/places:searchNearby", json=payload, headers=headers)
