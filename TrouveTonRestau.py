@@ -70,7 +70,7 @@ def run_api(lat, lng, rad):
     }
     headers = {
         "Content-Type": "application/json",
-        "X-Goog-Api-Key": "AIzaSyCgJpgA1IPL0azUj4phMzWnl5C8vU5oRBA",
+        "X-Goog-Api-Key": "",
         "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.rating,places.allowsDogs,places.location"
     }
     response = requests.post("https://places.googleapis.com/v1/places:searchNearby", json=payload, headers=headers)
