@@ -1,5 +1,5 @@
 
-# README: Projet DMC
+# README: Restaurant Recommendation System
 
 Ce projet contient deux scripts Python : `Projet_DMC_V1.py` et `Projet_DMC_V2.py`. 
 
