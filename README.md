@@ -1,48 +1,44 @@
-# Find_ur_restau
 
-# Multi-Criteria Decision Project for Restaurant Selection
+# README: Projet DMC
 
-This project recommends restaurants based on multiple criteria such as distance, rating, price, pet-friendliness, live music, outdoor seating, vegetarian options, and kids menus. It uses the Google Places API to retrieve restaurant data from various districts of Paris.
+Ce projet contient deux scripts Python : `Projet_DMC_V1.py` et `Projet_DMC_V2.py`. 
 
-## Features
+---
 
-- **API Integration:** Fetches restaurants through the Google Places API.
-- **Criteria Normalization:** Normalizes all criteria for fair comparison.
-- **User Preferences:** The user sets importance levels for each criterion.
-- **Scoring & Ranking:** Calculates a global score for each restaurant and ranks them.
-- **Excel Export:** Exports results to `API_Google_Maps.xlsx`.
+Fichiers inclus
 
-## Requirements
+1. `Projet_DMC_V1.py`
 
-- Python 3.10+  
-  *(If using Python < 3.10, replace `str | None` with `Optional[str]`)*  
-- `requests`
-- `pandas`
-- `openpyxl`
-- A valid Google Places API key
+-Ce script éxécute la méthode de pondération
+**Instructions d'utilisation :**
+1. Ouvrez un terminal ou votre environnement Python.
+2. Exécutez le script avec la commande suivante :
+   ```bash
+   python Projet_DMC_V1.py
+   ```
+3. Les résultats seront affichés dans la console ou sauvegardés dans un fichier (selon la configuration du script).
 
-## Installation & Usage
+---
 
-1. Clone the repository.
-2. Install dependencies (e.g., `conda install requests pandas openpyxl`).
-3. Run the script: `python Projet_DMC.py`.
-4. Input your preferences when prompted.
-5. The top recommended restaurants will be displayed, and the complete list will be saved to an Excel file.
+### 2. `Projet_DMC_V2.py`
 
-## Customization
+- Ce script exécute la méthode de surclassement .
+- **Remarque importante :** Après l'exécution du script, il peut être nécessaire de patienter jusqu'à **15 secondes** pour obtenir un résultat.
 
-- Update criteria and weights directly in the code.
-- Modify the `arrondissements` list for different areas.
+**Instructions d'utilisation :**
+1. Ouvrez un terminal ou votre environnement Python.
+2. Exécutez le script avec la commande suivante :
+   ```bash
+   python Projet_DMC_V2.py
+   ```
+3. Attendez plusieurs secondes (jusqu'à 15 secondes) pour que les résultats apparaissent.
 
-## License & Disclaimer
+---
 
-- Comply with Google Places API terms.
-- Be aware of potential API costs.
-
-## Author
-
-- Mayy Miled, Giuliano Aldarwish
-
-## Contributing
-
-- Contributions are welcome. Open issues or submit pull requests for improvements.
+## Pré-requis
+- Python 3.x doit être installé sur votre machine.
+- Si des bibliothèques spécifiques sont nécessaires, elles peuvent être installées avec la commande suivante :
+   ```bash
+   pip install -r requirements.txt
+   ```
+   (Si un fichier `requirements.txt` est inclus ou nécessaire).
